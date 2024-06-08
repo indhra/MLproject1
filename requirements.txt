@@ -1,4 +1,6 @@
 pandas
 numpy
 seaborn
-openai
+catboost
+xgboost
+scikit-learn
