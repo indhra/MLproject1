@@ -22,7 +22,7 @@ class CustomException(Exception):
     def __str__(self) :
         return self.error_message 
     
-# if __name__=='__main__':
+# if __name__=='__main__': for code testing purpose 
 #     try:
 #         a=1/0
 #     except Exception as e:
