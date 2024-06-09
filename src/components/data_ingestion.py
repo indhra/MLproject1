@@ -19,6 +19,10 @@ class DataIngestionConfig:
     raw_data_path: str=os.path.join('artifacts','data.csv')
      
 class DataIngestion:
+    """ 
+    loading of the data source
+    and splitting it into train and test
+    """
     def __init__(self):
         self.ingestion_config=DataIngestionConfig()
         
@@ -48,8 +52,8 @@ class DataIngestion:
             raise CustomException(e,sys)
         
         
-if __name__=='__main__':
-    obj=DataIngestion()
-    train_data,test_data = obj.inititate_data_ingestion()
-    data_transformation = DataTransformation()
-    data_transformation.inititate_data_transofrmation(train_data,test_data)
+# if __name__=='__main__':
+#     obj=DataIngestion()
+#     train_data,test_data = obj.inititate_data_ingestion()
+#     data_transformation = DataTransformation()
+#     data_transformation.inititate_data_transofrmation(train_data,test_data)
