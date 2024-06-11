@@ -80,7 +80,6 @@ class DataTransformation:
             
             preprocessing_obj = self.get_data_transformer_object()
             
-            
             target_column = 'math score'
             numerical_cols = ['writing score','reading score']
             
@@ -110,7 +109,6 @@ class DataTransformation:
             save_object(
                 file_path=self.data_transformation_config.pre_processor_obj_file,
                 objt=preprocessing_obj
-                
             )
             return(
                 train_arr,
